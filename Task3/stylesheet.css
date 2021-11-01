@@ -57,7 +57,7 @@ body{ background-image: url("./L03/task_material/images/bg.png");
             margin-right: auto;
             opacity: 70%;}
 
-     #portfolio {
+     #portfolio, #About, #Contact {
         color:white;
         font-size: 128px;
         padding-left: 150px;
