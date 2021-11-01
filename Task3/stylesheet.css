@@ -2,29 +2,49 @@ body{ background-image: url("./L03/task_material/images/bg.png");
     font-family: Arial, Helvetica, sans-serif;}
     
     .leiste{
-        list-style: none; 
+        width: fit-content;
+        height: auto;
+        font-size: 20px;
+        position: fixed;
+        color: white;
         background-color: black;
-        border: 5px solid;	
-        border-radius: 4px; 
-        width: 260px;
-        position: sticky; 
-        float: right;
+        padding: 2px 5px 2px 5px;
+        margin-top: 340px;
+        margin-right: auto;
+        margin-left: 800px;
+        border-radius: 0px 0px 5px 5px;
         z-index: 1;}
-    .kreis{
-        border-radius: 0px 0px 400px 400px;
-        background: #c02e0a;
+
+        a{ text-decoration: none;
+            color: white;}
+        
+        a:hover
+        {color: #ee3906;}
+        
+        .aktiv{
+            color: #ee3906;}
+            
+    .kreis{border-radius: 0px 0px 400px 400px;
+        background: #b63514;
         margin-top: -10px;
         width: 800px;
-        height:-450px; 
+        height: 450px; 
         margin-left:auto;
-        margin-right: auto;
-        z-index: 1;}
+        margin-right: auto;}
+    
 
         #textkreis{
             color:white;
             font-size: 14px;
             padding-left: 350px;
         z-index: 1;}
+
+        #fb{
+            width: 30px;
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 70%;}
 
      #portfolio {
         color:white;
