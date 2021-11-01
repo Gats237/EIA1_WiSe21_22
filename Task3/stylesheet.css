@@ -41,10 +41,10 @@ body{ background-image: url("./L03/task_material/images/bg.png");
             padding-left: 350px;
             z-index: 1;}
 
-        .h2{padding: 2px 5px 2px 5px;
+        .h2{ padding: 2px 5px 2px 5px;
             margin-top: 0px;
             margin-right: auto;
-            margin-left: 1200px;
+            margin-left: 1600px;
             border-radius: 0px 0px 5px 5px; }
 
         .h1{font-size: 72px;
