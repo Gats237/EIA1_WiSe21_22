@@ -41,14 +41,15 @@ body{ background-image: url("./L03/task_material/images/bg.png");
             padding-left: 350px;
             z-index: 1;}
 
-        .h2{ padding: 2px 5px 2px 5px;
-            margin-top: 0px;
-            margin-right: auto;
-            margin-left: 1600px;
-            border-radius: 0px 0px 5px 5px; }
-
-        .h1{font-size: 72px;
-                color: white;}
+          h1{   font-size: 200px;
+                letter-spacing: -20px;
+                margin-bottom: -50px;
+                margin-top: 60px; }
+            
+           h2{  font-size: 55px;
+                margin-left: 260px;
+                margin-top: 5px;
+                margin-bottom: 0px;}
 
         #fb{
             width: 30px;
