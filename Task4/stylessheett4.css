@@ -1,18 +1,22 @@
 body { background-image: url(./L04/task_material_winter/Station_1_Positionierung/images/bg.png);
 color: white; }
 
-.Karte{ position: fixed;
-    left: 25%;
+.Karte{margin: 0%;  
+       position: absolute;
+       left:50%;
+     top: 50%; 
+     -ms-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);}
 
-    top:25%;}
 
-.Pinguin{
-position: fixed;
-padding: 400px 800px 0px;}
+    .Pinguin { position: absolute;
+               left: 820px;
+               top: 420px;}
 
-.Busch{position: fixed;
-    padding: 115px 260px ;}
+.Busch{position: absolute;
+    left: 300px;
+    top: 120px ;}
 
 .Text{color: white;
-    position: fixed;
-padding: 190px 550px 180px 420px;}
+    position: absolute;
+padding: 220px 550px 180px 420px;}

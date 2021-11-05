@@ -1,0 +1,16 @@
+body { background-image: url(./L04/task_material_winter/Station_3_Hover/images/bg.png) ;}
+
+.Karte{ position: absolute
+    left 50%
+    top:50%;}
+
+.Stern{
+position: fixed;
+padding: 400px 800px 0px;}
+
+.Busch{position: fixed;
+    padding: 115px 260px ;}
+
+.Text{color: white;
+    position: fixed;
+padding: 190px 550px 180px 420px;}
