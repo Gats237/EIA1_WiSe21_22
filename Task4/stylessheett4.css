@@ -1,0 +1,18 @@
+body { background-image: url(./L04/task_material_winter/Station_1_Positionierung/images/bg.png);
+color: white; }
+
+.Karte{ position: fixed;
+    left: 25%;
+
+    top:25%;}
+
+.Pinguin{
+position: fixed;
+padding: 400px 800px 0px;}
+
+.Busch{position: fixed;
+    padding: 115px 260px ;}
+
+.Text{color: white;
+    position: fixed;
+padding: 190px 500px ;}
