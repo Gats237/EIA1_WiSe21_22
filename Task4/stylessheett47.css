@@ -1,0 +1,39 @@
+body { background-image: url(./L04/task_material_winter/Station_7_Videos/images/bg.png) ;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;}
+
+    .Karte{margin: 0%;  
+        position: absolute;
+        left:50%;
+      top: 50%; 
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);}
+
+      .Baum{ position: absolute;
+        top: 210px;
+        left: 680px;}
+
+.Stern1{ position: absolute;
+    top:220px;
+    left: 700px;}
+
+.Stern2{ position: absolute;
+        top:250px;
+        left: 730px;}
+
+.Stern3{ position: absolute;
+            top:270px;
+            left: 750px;}
+
+.Geschenk{ position: absolute;
+    top:450px;
+    left: 770px;
+z-index: 1;}
+
+.Text{color: white;
+    position: absolute;
+padding: 220px 550px 180px 420px;}
+
+.Busch{position: absolute;
+    left: 300px;
+    top: 120px ;}
