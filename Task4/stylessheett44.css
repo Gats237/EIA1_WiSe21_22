@@ -1,0 +1,25 @@
+
+Body {background-image: url(./L04/task_material_winter/Station_4_Fonts/images/bg.png)
+    ;  font-family: Jellyka_Font;
+    src: url(./L04/task_material_winter/Station_4_Fonts/fonts/Jellyka\ Delicious\ Cake.ttf)}
+      
+    @font-face {
+        font-family: 'jellyka_delicious_cakeregular';
+        src: url('./L04/task_material_winter/Station_4_Fonts/fonts/webfontkit-20211107-103444/jellyka_delicious_cake-webfont.woff') format('woff2'),
+             url('./L04/task_material_winter/Station_4_Fonts/fonts/webfontkit-20211107-103444/jellyka_delicious_cake-webfont.woff2') format('woff');
+        font-weight: normal;
+        font-style: normal;}
+    
+
+
+.Karte{margin: 0%;  
+    position: absolute;
+    left:50%;
+     top: 50%; 
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);}
+
+  .Text{color: white;
+    font-family: 'Fontkarte';
+    position: absolute;
+   padding: 220px 550px 180px 420px;}
