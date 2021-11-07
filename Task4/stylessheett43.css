@@ -17,24 +17,23 @@ font-family: Arial, Helvetica, sans-serif;}
                 left: 450px;
                 top: 400px;
                 opacity: 0;}
-
+                
             .stern1_:hover{
                 opacity: 100;}
 
-  .stern2{
-    position: absolute;
+ .stern2{ position: absolute;
     left: 525px;
     top: 370px;}
-.stern2_{
-    position: absolute;
+
+  .stern2_{ position: absolute;
     left: 525px;
     top: 370px;
     opacity: 0;}
 
-.stern2_:hover{
+  .stern2_:hover{
     opacity: 100;}
 
-    .stern3{  position: absolute;
+   .stern3{  position: absolute;
         left: 600px;
         top: 400px;}
 
@@ -58,6 +57,7 @@ font-family: Arial, Helvetica, sans-serif;}
 
         .stern4_:hover{
             opacity: 100;}  
+
 h1 { position: absolute ;
         left: 450px;
         top: 210px}
