@@ -8,10 +8,9 @@ body{
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
+    transform: translate(-50%, -50%);}
 
-img[src="./"] {
+img{
     width: 800px;
     height: auto;
 }
@@ -34,15 +33,14 @@ label{
 
 input{
     background-color:white;
-    color: gray;
+    color:rgb(155, 151, 151);
     font-size: 1em;
     margin-bottom: 20px;
     border-radius: 5px;
 }
-
-textarea{
+Text{
     background-color:white;
-    color: gray;
+    color: rgb(155, 151, 151);
     margin-bottom: 20px;
     font-size: 1em;
     border-radius: 5px;
@@ -57,7 +55,7 @@ textarea{
 
 button{
     background-color:white;
-    color: gray;
+    color: rgb(155, 151, 151);
     font-size: .7em;
     border-radius: 5px;
 }
