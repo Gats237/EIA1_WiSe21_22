@@ -1,5 +1,5 @@
 /*Welt*/
- var Welt=Afr18+Sou18+Nor18+Eur18+Asi18+Aus18
+ var Welt=Afr18+Sou18+Nor18+Eur18+Asi18+Aus18;
 
 /* Länder Text Variablen */
 var aus = "Australien";
@@ -47,7 +47,7 @@ var AustraliaAnstiegKG = Aus18 - Aus08;
 
 /*NORTH AMERICA*/
 var Nor08=6600.4;
-var Nor18=6035.6
+var Nor18=6035.6;
 var NorAnstiegPro= (Nor08/ Nor18- 1)*100;
 var NorWelt = (Aus08 / Welt) * 100;
 var NorAnstiegKG = Nor18 - Nor08;
@@ -55,26 +55,29 @@ var NorAnstiegKG = Nor18 - Nor08;
 /*ASIA*/
 var Asi08=12954.7;
 var Asi18=16274.1;
-var AsiAnstiegPro= (Asi08 /Asi18- 1)*100
+var AsiAnstiegPro= (Asi08 /Asi18- 1)*100;
 var AsiWelt = (Asi08/ Welt)* 100;
-var AsiAnstiegKg = (Asi18-Asi08)
+var AsiAnstiegKg = (Asi18-Asi08);
 
 
 /*Australia*/
 var Australia=1993;
 var Australia=2100.5;
-var AusAnstiegPro= (Aus08 /Aus18- 1)*100
+var AusAnstiegPro= (Aus08 /Aus18- 1)*100;
 var AusWelt = (Aus08/ Welt)* 100;
-var AusAnstiegKg = (Aus18-Aus08)
+var AusAnstiegKg = (Aus18-Aus08);
 
 /*EUROPE*/
 var Eur08=4965.7;
 var Eur18=4209.3;
-var EurAnstiegPro= (Eur08 /Eur18- 1)*100
+var EurAnstiegPro= (Eur08 /Eur18- 1)*100;
 var EurWelt = (Eur08/ Welt)* 100;
-var EurAnstiegKg = (Eur18-Eur08)
+var EurAnstiegKg = (Eur18-Eur08);
 
-console.log(text11 + eur + text12 + EurAnstiegKg + text13);
+console.log("Test");
+
+console.log( text11 + eur + text12 + EurAnstiegKg + text13);
+console.log("Test");
 console.log(text21 + eur+ text22 + EurWelt + text23);
 console.log(text31 + eur + text32 + EurAnstiegKg + text33);
 console.log(text41 + EurAnstiegPro+ text42);
