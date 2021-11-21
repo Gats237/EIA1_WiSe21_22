@@ -35,9 +35,9 @@ var Eur18 = 4209.3;
     function Continent(co, co08, co18) {
         document.querySelector("#titleRegion").innerHTML = co;
         document.querySelector(".absoluteEmission").innerHTML = co18.toFixed(1);
-        document.querySelector(".ContoWorld").innerHTML = ((co18 / Welt) * 100).toFixed(1) + "%";
-        document.querySelector(".growth").innerHTML = ((co18 / co08) * 100).toFixed(1) + "%";
-        document.querySelector(".emission").innerHTML = ((co18 / co08 - 1) * 100).toFixed(1);
+        document.querySelector(".ContoWorld").innerHTML = Math.round((co18 / Welt) * 100) + "%";
+        document.querySelector(".growth").innerHTML = (((co18 / co08) - 1) * 100).toFixed(1) + "%";
+        document.querySelector(".emission").innerHTML = ((co18 - co08).toFixed(1));
         document.querySelector("#region").innerHTML = co;
         document.getElementById("#chart").setAttribute("style", "height:" + (co18 / Welt) * 100 + "%");
     }
