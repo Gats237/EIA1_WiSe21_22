@@ -1,6 +1,3 @@
-/*Welt*/
-var Welt:number=Afr18+Sou18+Nor18+Eur18+Asi18+Aus18;
-
 /* Länder Text Variablen */
 var aus: string= "Australien";
 var asi: string= "Asien";
@@ -34,6 +31,9 @@ var Asi18: number=16274.1;
 var Eur08: number=4965.7;
 var Eur18: number=4209.3;
 
+/*Welt*/
+var Welt:number=(Afr18+Sou18+Nor18+Eur18+Asi18+Aus18);
+
  {
     document.querySelector(".europe").addEventListener("click", function () { Continent(eur, Eur08, Eur18); });
     document.querySelector(".northamerica").addEventListener("click", function () { Continent(nor, Nor08, Nor18); });
@@ -49,7 +49,7 @@ var Eur18: number=4209.3;
         document.querySelector(".growth").innerHTML = (((co18 / co08 )-1) * 100).toFixed(1) + "%";
         document.querySelector(".emission").innerHTML = ((co18- co08 ).toFixed(1));
         document.querySelector("#region").innerHTML = co;
-        document.getElementById("#chart").setAttribute("style", "height:" + (co18 / Welt) * 100 + "%");
+        document.getElementById("chart").setAttribute("style", "height:" + (co18 / Welt) * 100 + "%");
 
     }
 });
