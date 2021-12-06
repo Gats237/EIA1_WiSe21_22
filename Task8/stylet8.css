@@ -1,0 +1,89 @@
+body{ background-color:black ;}
+
+.Buttonoverlay {margin: 0%;  
+    position: absolute;
+    left:50%;
+  top: 50%; 
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);}
+
+.button1{ background-color: blue;
+    border-radius: 10px; 
+    width: 3cm;
+height: 3cm;}
+
+.button2{ background-color: blue;
+    border-radius: 10px; 
+    width: 3cm;
+height: 3cm;}
+ 
+.button3{ background-color: blue;
+    border-radius: 10px; 
+    width: 3cm;
+height: 3cm;}
+
+.button4{ background-color:palevioletred;
+    border-radius: 10px;
+    width: 3cm;
+height: 3cm;}
+
+.button5{ background-color: palevioletred;
+    border-radius: 10px;
+    width: 3cm;
+height: 3cm;}
+
+.button6{ background-color: palevioletred;
+    border-radius: 10px;
+    width: 3cm;
+height: 3cm;}
+
+.button7{ background-color:palevioletred;
+    border-radius: 10px; 
+    width: 3cm;
+height: 3cm;}
+
+.button8{ background-color:orange;
+    border-radius: 10px; 
+    width: 3cm;
+height: 3cm;}
+
+.button9{ background-color: orange;
+    border-radius: 10px; 
+    width: 3cm;
+height: 3cm;}
+
+.btn{margin: 0%;  
+    position: absolute;
+    left:50%;
+    top: 50%; 
+    -ms-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%,);}
+
+.box{ margin: 60px;
+    float:  left; 
+      padding: 60px;}
+
+#play{color: floralwhite;
+font-size: 70px;
+position: absolute;
+    left:50%;
+  top: 90%; }
+
+#stop{color: floralwhite;
+   
+    font-size: 70px;
+    position: absolute;
+    left:60%;
+  top: 90%; }
+
+#microphone { color: floralwhite;
+    font-size: 70px;
+    position: absolute;
+    left:70%;
+    top: 90%; }
+
+#trash{ color: forestgreen;
+font-size: 70px;
+    position: absolute;
+    left:80%;
+  top: 90%; }

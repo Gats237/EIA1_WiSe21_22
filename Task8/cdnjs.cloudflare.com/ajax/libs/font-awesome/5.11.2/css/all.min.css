@@ -1,0 +1,56 @@
+function playButton () { 
+    playactive = true; 
+    var index: number = 0;
+    setInterval (function () { play.beat() (beat[index]);
+                               if ( index >= beat.length);
+                               index = 0;
+  },             200) ;
+    if (play.getAttribute("class") == "fas fa-stop") {
+    play.setAttribute("class", "fas fa-play");
+    playButton();
+ }
+     
+ }
+  // Playbutton zu Stopbutton
+     function klickPlaybutton () {
+    document.querySelector("#play") .setAttribute ("class", "fas fa-stop" );
+    var index: number = 0,
+ number; }
+ /*Funktion Töne*/
+ function playSample(audio) {
+    var ton = new Audio(audio);
+    ton.play();
+ }
+ /*Funktion Beat, wenn man auf Playbutton klickt*/
+     function playBeat(audio) {
+    var beat = new Audio(audio);
+    beat.loop = true;
+    if (document.getElementById("#play").classList.contains("fa-play-circle")) {
+        document.getElementById("#play").classList.remove("fa-play-circle");
+        document.getElementById("#play").classList.add("fa-stop-circle");
+        interval = setInterval(tonbeat, 350);
+    }
+    else {
+        document.getElementById("#play").classList.remove("fa-stop-circle");
+        document.getElementById("play").classList.add("fa-play-circle");
+        clearInterval(interval);
+    }
+ }
+     function tonbeat() {
+    playSample(beat[index]);
+    index++;
+    if (index == 3) {
+        index = 0;
+    }
+ }
+ /*Funktion für Remix: alle 9 Sounds werden zufällig abgespielt*/
+     function REMIX() {
+    remix = setInterval(playRemix, 300);
+    function playRemix() {
+        for (var i1 = 0; i1 < 1; i1++) {
+            var i2 = Math.floor(Math.random() * 6);
+            playSample(TON[i2]);
+        }
+    }
+ }
+ } 
