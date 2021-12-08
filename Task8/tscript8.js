@@ -10,53 +10,76 @@ var t8;
         "assets/G.mp3",
         "assets/laugh-1.mp3",
         "assets/laugh-2.mp3"];
-    /* Beat*/
-    var beat = [samples[0], samples[2], samples[1], samples[4], samples[3]];
     /*Random*/
     var random = [samples[0], samples[1], samples[4], samples[6], samples[8]];
     //booleans für die Funktionen//
     var playactive = false;
-    // tslint:disable-next-line: typedef
-    document.querySelector(".button1").addEventListener("click", function () { playSound(samples[0]); });
-    // tslint:disable-next-line: typedef
-    document.querySelector(".button2").addEventListener("click", function () { playSound(samples[1]); });
-    // tslint:disable-next-line: typedef
-    document.querySelector(".button3").addEventListener("click", function () { playSound(samples[2]); });
-    // tslint:disable-next-line: typedef
-    document.querySelector(".button4").addEventListener("click", function () { playSound(samples[3]); });
-    // tslint:disable-next-line: typedef
-    document.querySelector(".button5").addEventListener("click", function () { playSound(samples[4]); });
-    // tslint:disable-next-line: typedef
-    document.querySelector(".button6").addEventListener("click", function () { playSound(samples[5]); });
-    // tslint:disable-next-line: typedef
-    document.querySelector(".button7").addEventListener("click", function () { playSound(samples[6]); });
-    // tslint:disable-next-line: typedef
-    document.querySelector(".button8").addEventListener("click", function () { playSound(samples[7]); });
-    // tslint:disable-next-line: typedef
-    document.querySelector(".button9").addEventListener("click", function () { playSound(samples[8]); });
-    document.querySelector("#play").addEventListener("click", function () { playButton(); });
-})(t8 || (t8 = {}));
-//Töne fürs Drumpad
-function playSound(audio) {
-    var samp = new Audio(audio);
-    samp.play();
-}
-// tslint:disable-next-line: typedef
-function playButton() {
-    var beat = new Audio(Audio);
-    function (audio) {
-        beat.loop = true;
-        if (document.getElementById("#play").classList.contains("fa-play-circle")) {
-            document.getElementById("#play").classList.remove("fa-play-circle");
-            document.getElementById("#play").classList.add("fa-stop-circle");
-            interval = setInterval(beat, 350);
+    var interval;
+    var rambeat;
+    //Töne fürs Drumpad
+    function playSound(audio) {
+        var samp = new Audio(audio);
+        samp.play();
+    }
+    /* Beat*/
+    var beat = [new Audio("assets/hihat.mp3"), new Audio("assets/kick.mp3"), new Audio("assets/snare.mp3")];
+    var playBu = document.querySelector("#play");
+    var index = 0;
+    var schleife = 1;
+    playBu.addEventListener("click", function stoppplayWechsel() {
+        if (document.getElementById("play").classList.contains("fa-play-circle")) {
+            document.getElementById("play").classList.remove("fa-play-circle");
         }
         else {
-            playButton;
-            document.getElementById("play").classList.remove("fa-stop-circle");
-            document.getElementById("play").classList.add("fa-play-circle");
-            clearInterval(interval);
+            // tslint:disable-next-line: whitespace
+            document.getElementById("play").classList.add("fa-stop-circle");
+            function playbeat() {
+                function playSound() {
+                    index++;
+                    if (index == 2) {
+                        index = 0;
+                    }
+                }
+                // Remix
+                var minbeat = 0;
+                var maxbeat = 8;
+                var remixzahl = Math.round(Math.random() + (maxbeat - minbeat)) + minbeat;
+                console.log(remixzahl);
+                function randombeat() {
+                    if (document.getElementById("remixbutton").classList.contains("fas fa-random")) {
+                        document.getElementById("remixbutton").classList.remove("fas fa-stop");
+                        rambeat = setInterval(randombeat, 350);
+                    }
+                    else
+                        (
+                        // tslint:disable-next-line: whitespace
+                        document.getElementById("play").classList.add("fa-stop-circle"));
+                }
+                // tslint:disable-next-line: typedef
+                function mixbeat() {
+                    setInterval(function () {
+                        beat[0].play();
+                    }, 10);
+                    setInterval(function () {
+                        beat[1].play();
+                    }, 50);
+                    setInterval(function () {
+                        beat[2].play();
+                    }, 40);
+                }
+                document.querySelector(".button1").addEventListener("click", function () { playSound(samples[0]); });
+                document.querySelector(".button2").addEventListener("click", function () { playSound(samples[1]); });
+                document.querySelector(".button3").addEventListener("click", function () { playSound(samples[2]); });
+                document.querySelector(".button4").addEventListener("click", function () { playSound(samples[3]); });
+                document.querySelector(".button5").addEventListener("click", function () { playSound(samples[4]); });
+                document.querySelector(".button6").addEventListener("click", function () { playSound(samples[5]); });
+                document.querySelector(".button7").addEventListener("click", function () { playSound(samples[6]); });
+                document.querySelector(".button8").addEventListener("click", function () { playSound(samples[7]); });
+                document.querySelector(".button9").addEventListener("click", function () { playSound(samples[8]); });
+                document.querySelector("#play").addEventListener("click", function () { mixbeat(); });
+                document.querySelector("#remixbutton").addEventListener("click", function () { randombeat(); });
+            }
         }
-    }
-}
+    });
+})(t8 || (t8 = {}));
 //# sourceMappingURL=tscript8.js.map
