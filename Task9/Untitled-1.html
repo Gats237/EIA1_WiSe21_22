@@ -1,0 +1,436 @@
+</head>
+<body>
+    <header> To do Liste</header>
+  <form>
+      <input type="text" class="todo-input">
+      <button class="buttonhinzu" type="submit">
+       <i class="fas fa-plus"></i></button>
+  </form>
+
+  <h1>TO DO LISTE</h1>
+  <p id="counter">xxx in total</p>
+
+  <div id="app">
+
+
+  </div>
+
+  <div class="inputGroup">
+      <input type="text" id="inputTodo" placeholder="Add another task">
+      <button id="addButton"><i class="fas fa-plus-circle"></i></button>
+    <div class="todo-container">
+        <div class="todo">
+            <button class="deletebuttom" type="submit">
+                <i class="fas fa-trash"></i></button>
+            <input type="text">
+            <button class="checkedbutton" type="submit">
+            <i class= "fas fa-check"></i></button>
+            <li class="checked">Pay bills</li>
+            <li>Meet George</li>
+            <li>Buy eggs</li>
+            <li>Read a book</li>
+             <li>Organize office</li>
+</ul>
+        </div>
+
+
+
+        //Variablen
+        var index: number= 0;
+        const todoInput =document.querySelector(".todo-input");
+        const todoButton = document.querySelector(".todo-button");
+        const todolist = document.querySelector(".todo.list");
+        const list= document.getElementById("list");
+        const position= "beforeend";
+    }
+  
+    todoObjectList.unshift(todoObject);
+    this.display();
+    document.querySelector("myInput").value = "";
+  }
+  
+  
+  
+  
+  const todoObjectList: string [] = [];
+  
+  class todo_Class {
+      constructor(item){
+          this.ulElement= item:
+      }
+  add(){ const todoInput = document.querySelector("#myInput").value;
+         if(todoInput==""){
+      alert("You did not enter any item!")
+  } else { const todoObject ={
+      id: todoObjectList.length,
+  todoText: todoInput,
+  isDone: false,
+  }
+  }
+  
+  
+         const todoli = document.createElement("li");
+         todoli.classList.add("todotext");
+         todoli.innerHTML = inputtodo.value;
+  
+  
+  }
+  
+       document.querySelector("asasv v buttonhinzu").addEventListener ("click", plusbutton );
+      document.querySelector(".deletebuttom").addEventListener("click"), trashbutton );
+  
+  
+  
+  function trashbutton { delete inner
+  
+  }
+  function plusbutton(event): void {
+  
+          event.preventDefault ();
+  
+          const todoDiv: HTMLDivElement = document.createElement("div");
+          todoDiv.classList.add("todo");
+  
+          const newTodo:   = document.createElement("li");
+          newTodo.innerText= "text";
+          newTodo.classList.add("todo-item");
+          todoDiv.appendChild(newTodo);:
+  //Checkbutton
+          const completedButton  = document.createElement("button");
+          completedButton.innerHTML= " <i class="fas fa-check"></i>"; 
+          completedButton.classList.add("completedButton");
+          todoDiv.appendChild(completedButton);
+  //Löschen
+          const trashButton  = document.createElement("deletebutton");
+          completedButton.innerHTML= " <i class="fas fa-trash"></i>";
+          completedButton.classList.add("completedButton");
+          todoDiv.appendChild(trashButton);
+  
+          todolistDiv.appendChild(completedButton);
+      
+  
+  
+  
+        
+  // Create a "close" button and append it to each list item
+  var myNodelist = document.getElementsByTagName("LI");
+  var i;
+  for (i = 0; i < myNodelist.length; i++) {
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    myNodelist[i].appendChild(span);
+  }
+  
+  // Click on a close button to hide the current list item
+  var close = document.getElementsByClassName("close");
+  var i;
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+  
+  // Add a "checked" symbol when clicking on a list item
+  var list = document.querySelector('ul');
+  list.addEventListener('click', function(ev) {
+    if (ev.target.tagName === 'LI') {
+      ev.target.classList.toggle('checked');
+    }
+  }, false);
+  
+  // Create a new list item when clicking on the "Add" button
+  function newElement() {
+    var li = document.createElement("li");
+    var inputValue = document.getElementById("myInput").value;
+    var t = document.createTextNode(inputValue);
+    li.appendChild(t);
+    if (inputValue === '') {
+      alert("You must write something!");
+    } else {
+      document.getElementById("myUL").appendChild(li);
+    }
+    document.getElementById("myInput").value = "";
+  
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    li.appendChild(span);
+  
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+      }
+    }
+  }
+  
+  
+  // Create a "close" button and append it to each list item
+  var myNodelist = document.getElementsByTagName("LI");
+  var i;
+  for (i = 0; i < myNodelist.length; i++) {
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    myNodelist[i].appendChild(span);
+  }
+  
+  // Click on a close button to hide the current list item
+  var close = document.getElementsByClassName("close");
+  var i;
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+  
+  // Add a "checked" symbol when clicking on a list item
+  var list = document.querySelector('ul');
+  list.addEventListener('click', function(ev) {
+    if (ev.target.tagName === 'LI') {
+      ev.target.classList.toggle('checked');
+    }
+  }, false);
+
+
+  //css
+
+  *{ margin: o;
+    padding: 0;
+    box-sizing: border-box;}
+    
+    body { background: linear-gradient(90deg, rgba(207, 122, 122,1)2%, 
+                                                rgba(14, 133, 14,1)50%, 
+                                              rgba(252, 166, 69,1)100%);
+            
+                padding: 30px 40px;                              
+                color: white;
+                text-align: center;                 
+                                            }
+      
+    header {font-size: 1.5rem;}
+    
+    header, form{ min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+    
+    form input, form button{ padding: 0.5rem;
+                font-size: 2rem;
+            border: none;
+       : white;}
+        
+    .buttonhinzu{ padding: 0;
+    border: none;
+    background:orange ;}
+    
+    
+    .buttonhinzu:hover{  background: orangered;
+      color: white;}
+
+
+      /# sourceMappingURL=script09.js.map
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li: HTMLElement = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span: HTMLElement = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Remove margins and padding from the list */
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+  
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  /* Style the close button */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #f44336;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the input */
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }
+
+  // tslint:disable-next-line: typedef
+  window.addEventListener("load", function () {
+      // tslint:disable-next-line: variable-name
+      var Todoeingabe = document.querySelector("#Eingabefeld");
+  
+      var Todo: {};
+      
+      ((_Todo) => {
+          // tslint:disable-next-line: typedef
+          var app = document.getElementById("app");
+          // tslint:disable-next-line: typedef
+          var p = document.createElement("p"); // <p></p>
+          p.textContent = "Erstelle hier deine ToDo-Liste:";
+          app.appendChild(p);
+          document.querySelector("#addButton").addEventListener("click", addTextToHtml);
+          // tslint:disable-next-line: typedef
+          var input = document.querySelector("#inputTodo");
+          // tslint:disable-next-line: typedef
+          function addTextToHtml() {
+              addTask.addEventListener("click", function () {
+                  var textVonEingabefeld: HTMLElement = document.createElement("li");
+                  textVonEingabefeld.innerHTML = Eingabefeld.value;
+                  liste.appendChild(aufgaben);
+                  Eingabefeld.value = "";
+                  zaehler = zaehler + 1;
+                  document.querySelector("h2").innerHTML = zaehler + " in total"
+  
+            ;
+              if (input.value != "")
+                  textVonEingabefeld = input.value;
+              input.value = "";
+              // tslint:disable-next-line: typedef
+              var app = document.getElementById("app");
+              // tslint:disable-next-line: typedef
+              var p = document.createElement("p");
+              p.textContent = textVonEingabefeld;
+              p.addEventListener("click", erledigt);
+              // tslint:disable-next-line: typedef
+              const newLocal = void 0;
+              // tslint:disable-next-line: no-unused-expression
+              app === null || app === void 0 ? newLocal : app.appendChild(p);
+          }
+          // tslint:disable-next-line: typedef
+          function erledigt() {
+              if (this.style.textDecoration == "line-through") {
+                  this.style.textDecoration = "none";
+                  this.style.color = "#2f4f4f";
+              }
+              else {
+                  this.style.textDecoration = "line-through";
+                  this.style.color = "#ff0000";
+              }
+          }
+      })(Todo || (Todo = {}));
+  });
+
+

@@ -27,12 +27,12 @@ var beat = [new Audio('assets/hihat.mp3'), new Audio('assets/kick.mp3'), new Aud
 function mixbeat() {
     setInterval(function () {
         beat[0].play();
-    }, 300);
+    }, 10);
     setInterval(function () {
         beat[1].play();
-    }, 500);
+    }, 50);
     setInterval(function () {
         beat[2].play();
-    }, 700);
+    }, 40);
 }
 //# sourceMappingURL=tscriptt7.js.map

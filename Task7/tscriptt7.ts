@@ -32,14 +32,14 @@ var beat: HTMLAudioElement[] = [new Audio('assets/hihat.mp3'), new Audio ('asset
 function mixbeat(){
     setInterval(function() {
         beat[0].play();
-     }, 300);
+     }, 10);
     
      setInterval(function() {
         beat[1].play();
-     }, 500);
+     }, 50);
 
      setInterval(function() {
         beat[2].play();
-     }, 700);
+     }, 40);
     
     }
