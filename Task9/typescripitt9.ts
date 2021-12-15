@@ -1,59 +1,45 @@
-window.addEventListener("load", function () {
-    // Variablendeklaration //
-    var eingabe: any = document.querySelector("#eingabe");
-    var liste: Element = document.querySelector("#ul");
-    var addTask: Element = document.querySelector("#addTask");
-    var newCheckIcon: number = document.createElement;
-    //New Task
-    // tslint:disable-next-line: align
-    addTask.addEventListener("click", function neueAufgabe(): void {
-        var aufgaben = document.createElement("newli");
-        aufgaben.innerHTML = eingabe.value;
-        liste.appendChild(aufgaben);
-        li.classList.add("far", "fa-trash-alt");
-        hakengesetzt.classList.add("far", "fa-circle");
-        eingabe.value = "";
 
-        zaehler: number = zaehler + 1;
-        document.querySelector("h2").innerHTML = zaehler + " in total";
-        //Delete
-        trash.addEventListener("click", function ():void {
-            todoList.removeChild(todoDiv);
-            // -1 ToDo Counter 
-            counter--;
-            counter();
-            var trash = document.createElement("l");
-            aufgaben.appendChild(trash);
-            trash.classList.add("far", "fa-trash-alt");
-        /* Funktion vom Löschen */
-            trash.addEventListener("click", function () {
-            aufgaben.classList.add("ausgeblendet");
-            zaehler = zaehler - 1;
-            document.querySelector("h2").innerHTML = zaehler + " in total";
-        });
-        /* Kreis für Checkbox */
-            var hakengesetzt = document.createElement("hg");
-            aufgaben.appendChild(hakengesetzt);
-            hakengesetzt.classList.add("far", "fa-circle");
-        /* Funktion Kreis von Checkbox */
-        hakengesetzt.addEventListener("click", function () {
-                hakengesetzt.classList.add("ausgeblendet");
-            hakengesetzt.classList.remove("ausgeblendet");
-        });
+namespace T9 {
+   
+  window.addEventListener("load", function () {
+    let totalnumber: number = 0;
+    function addTask(): void {
+        event.preventDefault();
+        const listenPunkt: HTMLElement = document.createElement("div");
+        listenPunkt.classList.add("listenpunkt");
+        const textInhalt: HTMLElement = document.createElement("li");
+        textInhalt.innerHTML = document.querySelector(".todo").value;
+        textInhalt.classList.add("text");
+        listenPunkt.appendChild(textInhalt);
+        const trashbtn: HTMLElement = document.createElement("button");
+        trashbtn.innerHTML = "<b class= 'fas fa-trash'> </b>";
+        trashbtn.classList.add("trash");
+        listenPunkt.appendChild(trashbtn);
+        totalnumber++;
 
-        
-        // Funktion ohne Haken
-            var hakengesetzt: HTMLElement = document.createElement("hg");
-            aufgaben.appendChild(hakengesetzt);
-            hakengesetzt.classList.add("far", "fa-check-circle", "ausgeblendet");
-        
-        
-        
-        // Funktion mit Haken gesetzt
-            hakengesetzt.addEventListener("click", function () {
-            hakengesetzt.classList.add("ausgeblendet");
-            hakengesetzt.classList.remove("ausgeblendet");
-        });
-    });
+
+        document.querySelector("h2").innerHTML = totalnumber + " in total";
+        const checkedKnopf: HTMLElement = document.createElement("button");
+        checkedKnopf.innerHTML = "<b class= 'fas fa-check'> </b>";
+        checkedKnopf.classList.add("check");
+        listenPunkt.appendChild(checkedKnopf);
+        document.querySelector(".liste").appendChild(listenPunkt);
+        document.querySelector(".todo").value = "";
+    }
+
+    // Delete Funktion
+    function delCheckTask() {
+        const müll = event.target;
+        if (müll.classList [0] === "trash") {
+            müll.parentElement.remove();
+            totalnumber--;
+            document.querySelector("h2").innerHTML = totalnumber + " in total";
+        }
+        if (müll.classList[0] === "check") {
+            müll.classList.toggle("checked");
+        }
+    }
+    document.querySelector(".todo").addEventListener("click", function (): void { addTask(); });
+    document.querySelector(".liste").addEventListener("click", function (): void { delCheckTask(); });
 });
-//# sourceMappingURL=script.js.map
+}
