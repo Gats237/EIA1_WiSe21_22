@@ -16,8 +16,9 @@ namespace T9 {
         trashbtn.classList.add("trash");
         listenPunkt.appendChild(trashbtn);
         totalnumber++;
+        
 
-
+        //Zähler Total
         document.querySelector("h2").innerHTML = totalnumber + " in total";
         const checkedKnopf: HTMLElement = document.createElement("button");
         checkedKnopf.innerHTML = "<b class= 'fas fa-check'> </b>";
@@ -29,8 +30,9 @@ namespace T9 {
 
     // Delete Funktion
     function delCheckTask() {
-        const müll = event.target;
-        if (müll.classList [0] === "trash") {
+        
+        const müll: EventTarget = event. target;
+        if (müll.classlist [0] === "trash") {
             müll.parentElement.remove();
             totalnumber--;
             document.querySelector("h2").innerHTML = totalnumber + " in total";
