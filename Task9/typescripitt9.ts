@@ -29,7 +29,7 @@ namespace T9 {
     }
 
     // Delete Funktion
-    function delCheckTask() {
+    function CheckAufgabe(): void {
         
         const müll: EventTarget = event. target;
         if (müll.classlist [0] === "trash") {
@@ -42,6 +42,6 @@ namespace T9 {
         }
     }
     document.querySelector(".todo").addEventListener("click", function (): void { addTask(); });
-    document.querySelector(".liste").addEventListener("click", function (): void { delCheckTask(); });
+    document.querySelector(".liste").addEventListener("click", function (): void { CheckAufgabe(); });
 });
 }

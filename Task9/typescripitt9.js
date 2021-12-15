@@ -15,6 +15,7 @@ var T9;
             trashbtn.classList.add("trash");
             listenPunkt.appendChild(trashbtn);
             totalnumber++;
+            //Zähler Total
             document.querySelector("h2").innerHTML = totalnumber + " in total";
             const checkedKnopf = document.createElement("button");
             checkedKnopf.innerHTML = "<b class= 'fas fa-check'> </b>";
@@ -24,9 +25,9 @@ var T9;
             document.querySelector(".todo").value = "";
         }
         // Delete Funktion
-        function delCheckTask() {
+        function CheckAufgabe() {
             const müll = event.target;
-            if (müll.classList[0] === "trash") {
+            if (müll.classlist[0] === "trash") {
                 müll.parentElement.remove();
                 totalnumber--;
                 document.querySelector("h2").innerHTML = totalnumber + " in total";
@@ -36,7 +37,7 @@ var T9;
             }
         }
         document.querySelector(".todo").addEventListener("click", function () { addTask(); });
-        document.querySelector(".liste").addEventListener("click", function () { delCheckTask(); });
+        document.querySelector(".liste").addEventListener("click", function () { CheckAufgabe(); });
     });
 })(T9 || (T9 = {}));
 //# sourceMappingURL=typescripitt9.js.map
